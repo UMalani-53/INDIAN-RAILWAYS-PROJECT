@@ -1,0 +1,272 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+  }
+  
+  .train-details-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo i {
+    font-size: 2rem;
+    color: #3b82f6;
+    margin-right: 0.5rem;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+    color: #1f2937;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #4b5563;
+  }
+  
+  nav a:hover {
+    color: #1f2937;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    flex-grow: 1;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .card-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #1f2937;
+  }
+  
+  .status {
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .status.on-time {
+    background-color: #10b981;
+    color: #ffffff;
+  }
+  
+  .status.delayed {
+    background-color: #f59e0b;
+    color: #ffffff;
+  }
+  
+  .status.cancelled {
+    background-color: #ef4444;
+    color: #ffffff;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+  }
+  
+  .journey-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .detail {
+    display: flex;
+    align-items: center;
+  }
+  
+  .detail i {
+    margin-right: 0.5rem;
+    color: #3b82f6;
+  }
+  
+  .label {
+    font-weight: 600;
+    margin-right: 0.25rem;
+  }
+  
+  h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: #1f2937;
+  }
+  
+  .route-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .route-table th,
+  .route-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .route-table th {
+    background-color: #f9fafb;
+    font-weight: 600;
+    color: #4b5563;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-primary {
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2563eb;
+  }
+  
+  .btn-secondary {
+    background-color: #ffffff;
+    color: #4b5563;
+    border: 1px solid #d1d5db;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #f9fafb;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #1f2937;
+    color: #ffffff;
+    padding: 2rem 0;
+    margin-top: auto;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .footer-section h3 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section a {
+    color: #9ca3af;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    color: #ffffff;
+  }
+  
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #374151;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: #9ca3af;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav {
+      margin-top: 1rem;
+    }
+  
+    .journey-details {
+      grid-template-columns: 1fr;
+    }
+  
+    .action-buttons {
+      flex-direction: column;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }
