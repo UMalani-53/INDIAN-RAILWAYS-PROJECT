@@ -1,0 +1,61 @@
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+
+}
+
+/* Styling for the video header */
+.video-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;  /* Ensure video is in the background */
+}
+
+.video-background {
+  object-fit: cover; /* Ensure the video covers the entire screen */
+  width: 100%;
+  height: 100%;
+}
+
+/* Quote container styling */
+.quote-container {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset by half its own height and width */
+  text-align: center;
+  width: 100%;
+}
+
+/* Quote styling */
+.quote-text {
+  font-size: 3.5rem;  /* Adjust font size */
+  font-weight: bold;  /* Make the quote bold */
+  color:white;  /* Set the text color to white */
+  font-family: 'Courier New', Courier, monospace;  /* Use a monospace font for the typing effect */
+  white-space: nowrap;  /* Prevent the quote from breaking into multiple lines */
+  overflow: hidden; /* Hide overflow text until it's typed */
+  display: inline-block; /* Allow text to appear inline */
+  opacity: 1; /* Make sure the text is visible */
+  transition: opacity 1s ease-in-out; /* Fade in text smoothly */
+}
+
+/* Additional effect when the quote is typed */
+.quote-text {
+  animation: typing 5s steps(40) 1s forwards; /* Typing animation */
+}
+
+/* Keyframes for typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

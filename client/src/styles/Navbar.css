@@ -1,0 +1,181 @@
+/* Navbar styling */
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    height: 90px;
+    margin: 0 20px;
+  }
+  
+  .nav-content {
+    display: flex;
+    background-color: #d0e7f6;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  /* Add this to your Navbar.css */
+.highlight {
+  background-color: yellow;  /* You can choose any color */
+  font-weight: bold;
+}
+
+  
+  /* Left section: Logo and hamburger */
+  .nav-left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .nav-content img {
+    border-radius: 50%;
+    height: 90px;
+    margin-top: 10px;
+  }
+  
+  /* Centered Search Bar */
+  .nav-center {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    justify-content: center; /* Center align the search bar */
+  }
+  
+  .search {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search input {
+    padding: 10px 40px 10px 15px; /* Padding for input field to make space for the icon */
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 300px; /* Adjust width as needed */
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 10px; /* Position it inside on the right side */
+    height: 20px; /* Adjust size of the icon */
+    pointer-events: none; /* Disable click events on the image */
+  }
+  
+  /* Login link on the right side */
+  .nav-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .login {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-right: 20px;
+    width: 100px;
+  }
+  
+  .login a {
+    text-decoration: none;
+    color: #333;
+    padding-left: 15px;
+    font-size: 20px;
+  }
+  
+  /* Toggle button with three dots */
+  .navbar-toggler {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Style for three-dot icon */
+  .dots {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .dots span {
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: rgb(95, 92, 92);
+    border-radius: 50%;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #343a40;
+    transform: translateX(-100%); /* Start off-screen */
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    padding-top: 60px;
+  }
+  
+  /* Sidebar visible when open */
+  .sidebar.open {
+    transform: translateX(0); /* Slide into view */
+  }
+  
+  /* Sidebar navigation links */
+  .sidebar-nav {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-nav li {
+    margin: 20px;
+  }
+  
+  .sidebar-nav li a {
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .sidebar-nav li a:hover {
+    color: #adb5bd;
+  }
+  
+  .li {
+    box-sizing: border-box;
+    color:rgb(249, 248, 248);
+    border: 1px solid white; /* Keeps the white border around each item */
+    padding: 10px 75px; /* Adds padding for spacing */
+    margin: 10px 0; /* Adds vertical margin between the items */
+    background-color: transparent; /* Keep background transparent */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .li:hover {
+    background-color: #adb5bd; /* Light grey background on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    color: white; /* Change text color to white on hover */
+  }
+  
+  /* Overlay styling to dim background when sidebar is open */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 999; /* Sits just below the sidebar */
+  }
+  
+  /* Heading style */
+  #h1 {
+    color: aliceblue;
+    margin-top: -26px;
+    padding-bottom: 20px;
+  }
+  

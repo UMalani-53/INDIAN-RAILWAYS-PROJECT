@@ -1,0 +1,55 @@
+/* Container for the entire services section */
+.services-container {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;  /* Light gray background */
+  }
+  
+  /* Title of the services section */
+  .services-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f8f6f6;
+    margin-bottom: 40px;
+    margin-top: -20px;
+  }
+  
+  /* Container for the list of services */
+  .services-list {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap; /* Allows the items to wrap on smaller screens */
+  }
+  
+  /* Styling for each service item */
+  .service-item {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+   
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-10px);  /* Hover effect to lift the item */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Deeper shadow on hover */
+  }
+  
+  /* Styling for images inside each service item */
+  .service-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for service name */
+  .service-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
